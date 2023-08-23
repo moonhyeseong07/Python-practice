@@ -1,9 +1,4 @@
-n=int(input())
-i=0
-c=0
-while True:
-    c=c+1
-    i=i+c
-    if n<=i:
-        print(c)
-        break;
+a, m, d, n=map(int, input().split())
+for i in range(1,n):
+    a=a*m+d
+print(a)
