@@ -1,10 +1,14 @@
-p=[]; q=[]
-for i in range(3):
-    a=int(input())
-    p.append(a)
-for i in range(2):
-    a=int(input())
-    q.append(a)
-p=sorted(p); q=sorted(q)
-f=p[0]+q[0]
-print(f+f/10)
+def f(n):
+    if n>1:
+        return n+f(n-1)
+    else:
+        return 1
+
+if __name__=="__main__":
+    n=int(input())
+    a=f(n)
+    for i in range(n):
+        for j in range(i+1):
+            print(a, end=' ')
+            a-=1
+        print('')
