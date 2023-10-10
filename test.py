@@ -1,10 +1,8 @@
-#예를 5로 들게
-n=int(input()); sum=0
-for i in range(1, n+1):
-    sum+=i
-#for문을 돌려서 계산 예를 5라고 하면 1+2+3+4+5
-for i in range(n):#5번 반복
-    for j in range(i+1):#i=0일때 1번 1일때 2번 반복
-        print(sum, end=' ')# 공백으로 벌려서 출력
-        sum-=1#sum을 빼줌
-    print('')#줄바꿈
+# 사용자로부터 정수 n을 입력받습니다.
+n = int(input())
+
+# 0부터 n-1까지의 범위에서 반복합니다.
+for i in range(n):
+    # 현재 i 값에 따라 공백과 별표(*)를 출력합니다.
+    # i 값만큼 공백을 출력한 후에 '**'를 출력합니다.
+    print(' ' * i + '**')
