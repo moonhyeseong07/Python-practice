@@ -1,8 +1,12 @@
-# 사용자로부터 정수 n을 입력받습니다.
-n = int(input())
+def recursive_sum(numbers):
+    if not numbers:
+        return 0
+    return numbers.pop() + recursive_sum(numbers)
 
-# 0부터 n-1까지의 범위에서 반복합니다.
-for i in range(n):
-    # 현재 i 값에 따라 공백과 별표(*)를 출력합니다.
-    # i 값만큼 공백을 출력한 후에 '**'를 출력합니다.
-    print(' ' * i + '**')
+def main():
+    numbers = list(map(int, input().split()))
+    result = recursive_sum(numbers)
+    print(result)
+
+if __name__ == "__main__":
+    main()
