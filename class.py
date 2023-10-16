@@ -1,10 +1,8 @@
-def fibonacci(n):
-    if n == 0:
-        return 1
-    elif  n == 1:
-        return 1
-    else:                                        # n >= 2 인 경우
-        return fibonacci(n-1) + fibonacci(n-2)
-for n in range(10):
-    print(fibonacci(n),end=', ')
-print('.......')
+def countdown_num(n):
+    if n <= 0:
+        return 0
+    else:
+        print(n, '이(가) 양수인 경우!')
+        result = countdown_num(n-1) + 1
+        return result
+print('반환값:',countdown_num(100))
