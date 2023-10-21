@@ -1,2 +1,4 @@
-n=float(input())
-print(n)
+a=input()
+b=input()
+print(b)
+print(a)
