@@ -1,3 +1,3 @@
-a,b=input().split()
-s=int(a)+int(b)
-print(s)
+a = float(input())
+b = float(input())
+print(a + b)
