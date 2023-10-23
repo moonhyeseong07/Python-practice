@@ -1,3 +1,2 @@
-a = float(input())
-b = float(input())
-print(a + b)
+a=int(input())
+print('%x'%a)
