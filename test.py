@@ -1,3 +1,3 @@
 a,b=input().split()
-s=a+b
+s=int(a)+int(b)
 print(s)
