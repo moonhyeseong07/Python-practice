@@ -1,2 +1,3 @@
-a,b,c=input().split(':')
-print(b)
+a,b=input().split()
+s=a+b
+print(s)
