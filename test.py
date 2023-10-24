@@ -1,5 +1,5 @@
-n = int(input())  
+a= int(input())  
 num = list(map(int, input().split())) 
-for i in range(n - 1, -1, -1):
+for i in range(a - 1, -1, -1):
     print(num[i], end=' ')
 
