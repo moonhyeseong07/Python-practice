@@ -1,5 +1,4 @@
-n=10
+n=int(input())
 while n!=0:
-    n=int(input())
-    if n!=0:
-        print(n)
+    print(n)
+    n=n-1
