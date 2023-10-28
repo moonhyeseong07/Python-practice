@@ -1,5 +1,5 @@
-while True:
-    n=input()
-    print(n)
-    if n=='q':
-        break
+n=10
+while n!=0:
+    n=int(input())
+    if n!=0:
+        print(n)
