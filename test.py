@@ -1,6 +1,4 @@
-n=input()
-a=n[::-1]
-sum=str(int(n)+int(a))
-if sum==sum[::-1]:
-    print('YES')
-else: print('NO')
+a,b,c=map(int,input().split())
+list=[a,b,c]
+list.sort()
+print(*list)
