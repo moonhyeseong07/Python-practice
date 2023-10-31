@@ -1,3 +1,2 @@
-a,b =map(float, input().split())
-c=a*b
-print(c)
+w,n =input().split()
+print(w*int(n))
