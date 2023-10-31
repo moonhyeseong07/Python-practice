@@ -1,3 +1,3 @@
-n=input()
-s=input()
-print(int(n)*s)
+a,b=map(int,input().split())
+c=a**b
+print(c)
