@@ -1,10 +1,9 @@
 n=int(input())
-if n>=90 : print('A')
-else :
-    if n>=70 :
-        print('B')
-    else :
-        if n>=40 :
-            print('C')
-        else :
-            print('D') 
+if(n<0)and(n%2==0):
+    print('A')
+elif(n<0)and(n%2==1):
+    print('B')
+elif(n>0)and(n%2==0):
+    print('C')
+else:
+    print('D')
