@@ -1,8 +1,10 @@
-a=int(input())
-while str(a)[-1] == '0':
-    a//= 10
-print(str(a)[::-1])
-b=list(str(a))
-for i in range(len(b)):
-    b[i] = int(b[i])
-print(sum(b))
+n=int(input())
+if n>=90 : print('A')
+else :
+    if n>=70 :
+        print('B')
+    else :
+        if n>=40 :
+            print('C')
+        else :
+            print('D') 
