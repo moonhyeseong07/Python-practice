@@ -1,9 +1,13 @@
-n=int(input())
-if(n<0)and(n%2==0):
-    print('A')
-elif(n<0)and(n%2==1):
-    print('B')
-elif(n>0)and(n%2==0):
-    print('C')
-else:
-    print('D')
+a,b,c=map(int,input().split())
+if a%2==0 :
+    print("even")
+else :
+    print("odd") 
+if b%2==0 :
+    print("even")
+else :
+    print("odd") 
+if c%2==0 :
+    print("even")
+else :
+    print("odd") 
