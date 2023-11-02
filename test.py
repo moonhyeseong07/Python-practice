@@ -1,2 +1,3 @@
-a,b=map(int,input().split())
-print(a%b)
+a=input()
+a=float(a)
+print(format(a,".2f") )
