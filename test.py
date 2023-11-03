@@ -1,13 +1,4 @@
-x,y=map(int,input().split())
-a=x+y
-b=x-y
-c=x*y
-d=x//y
-e=x%y
-f=x/y
-print(a)
-print(b)
-print(c)
-print(d)
-print(e)
-print(format(f,".2f"))
+a,b,c=map(int,input().split())
+d=a+b+c
+e=d/3
+print(d,format(e,".2f"))
