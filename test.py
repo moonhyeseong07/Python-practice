@@ -1,3 +1,13 @@
-a,b=map(float,input().split())
-res=a/b
-print(format(res,".3f"))
+x,y=map(int,input().split())
+a=x+y
+b=x-y
+c=x*y
+d=x//y
+e=x%y
+f=x/y
+print(a)
+print(b)
+print(c)
+print(d)
+print(e)
+print(format(f,".2f"))
