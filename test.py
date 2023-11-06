@@ -1,2 +1,2 @@
-n=int(input())
-print(bool(n))
+n=bool(int(input()))
+print(not n)
