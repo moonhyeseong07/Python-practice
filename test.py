@@ -1,2 +1,2 @@
-n=bool(int(input()))
-print(not n)
+a,b=input().split()
+print(bool(int(a)) and bool(int(b)))
