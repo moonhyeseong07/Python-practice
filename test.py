@@ -1,10 +1,7 @@
-a,b=map(int,input().split())
-def odd(a,b):
-    if a>b:
-        return 0
-    elif b%2:
-        odd(a,b-1)
-        print(b,end=' ')
+def fact(n):
+    if n==0:
+        return 1
     else:
-        odd(a,b-1)
-odd(a,b)
+        return n*fact(n-1)
+n=int(input())
+print(fact(n))
