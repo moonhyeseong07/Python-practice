@@ -1,6 +1,10 @@
-n=int(input())
-for i in range(1,n+1):
-    if i%10==3 or i%10==6 or i%10==9:
-        print("X",end=' ')
+def gcd(x,y):
+    if y==0:
+        return x
     else:
-        print(i,end=' ')
+        return gcd(y, x % y)
+def gcdthree(a, b, c):
+    return gcd(gcd(a,b),c)
+a,b,c=map(int, input().split())
+result = gcdthree(a, b, c)
+print(result)
