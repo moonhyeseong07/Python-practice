@@ -1,46 +1,52 @@
-stack_size=5
-stack=[None]*stack_size
-top=-1
+queue_size = 5
+queue = [None] * queue_size
+front = rear = -1
 
-def isEmpty():
-    if top==-1: return True
-    else: return False
+def is_empty():
+    return front == rear == -1
 
-def isFull():
-    return top==stack_size-1
+def is_full():
+    return (rear + 1) % queue_size == front
 
-def push(item):
-    global top
-    if not isFull():
-        top=top+1
-        stack[top]=item
-        print(stack)
+def enqueue(item):
+    global front, rear
+    if not is_full():
+        if is_empty():
+            front = 0
+        rear = (rear + 1) % queue_size
+        queue[rear] = item
+        print(queue)
     else:
-        print("stack is Full")
+        print("Queue is Full")
 
-def pop():
-    global top
-    if not isEmpty():
-        item=stack[top]
-        top=top-1
+def dequeue():
+    global front, rear
+    if not is_empty():
+        item = queue[front]
+        if front == rear:
+            front = rear = -1
+        else:
+            front = (front + 1) % queue_size
+        queue[front - 1] = None  
+        print(queue)
         return item
     else:
-        print("stack is Empty")
+        print("Queue is Empty")
         return None
-    
+
 def peek():
-    if not isEmpty():
-        return stack[top]
+    if not is_empty():
+        return queue[front]
     else:
-        print("stack is Empty")
+        print("Queue is Empty")
         return None
-push(1)
-push(2)
-push(3)
-push(4)
-push(5)
-pop()
-pop()
-push(6)
-pop()
-push(7)
+
+enqueue(1)
+enqueue(2)
+enqueue(3)
+enqueue(4)
+enqueue(5)
+dequeue()
+dequeue()
+dequeue()
+dequeue()
