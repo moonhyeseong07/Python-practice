@@ -1,2 +1,3 @@
-print("special characters")
-print('[\\n,\\",\\\] is very important.')
+a,b=map(int,input().split())
+c=a*b/2
+print(c)
