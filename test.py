@@ -1,2 +1,2 @@
-n=int(input())
-print('%o %X'%(n,n))
+c=input()
+print(c)
