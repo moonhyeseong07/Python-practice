@@ -1,4 +1,3 @@
-s=int(input())
-m=s//60
-rs=s%60
-print(f"{m} {rs}")
+t=int(input())
+f=9/5*t+32
+print('%.3f'%f)
