@@ -1,5 +1,7 @@
-n=int(input())
-if 10>n:
-    print('small')
-else:
-    print('big')
+a,b=map(int,input().split())
+if a>b:
+    print('>')
+if a<b:
+    print('<')
+if a==b:
+    print('=')
