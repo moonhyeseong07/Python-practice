@@ -1,52 +1,65 @@
-queue_size = 5
-queue = [None] * queue_size
-front = rear = -1
+class Deque:
+    def __init__(self, capacity=5):
+        self.capacity = capacity
+        self.list = [None] * capacity
+        self.front = -1
+        self.rear = 5  
 
-def is_empty():
-    return front == rear == -1
+    def isEmpty(self):
+        return self.rear == self.capacity or self.front == -1
 
-def is_full():
-    return (rear + 1) % queue_size == front
+    def isFull(self):
+        return self.rear - 1 == self.front
 
-def enqueue(item):
-    global front, rear
-    if not is_full():
-        if is_empty():
-            front = 0
-        rear = (rear + 1) % queue_size
-        queue[rear] = item
-        print(queue)
-    else:
-        print("Queue is Full")
+    def Addfront(self, e):
+        if self.isFull():
+            print('full')
+            return
+        self.front += 1
+        self.list[self.front] = e
+        print(self.list)
 
-def dequeue():
-    global front, rear
-    if not is_empty():
-        item = queue[front]
-        if front == rear:
-            front = rear = -1
-        else:
-            front = (front + 1) % queue_size
-        queue[front - 1] = None  
-        print(queue)
-        return item
-    else:
-        print("Queue is Empty")
-        return None
+    def Deletefront(self):
+        if self.isEmpty():
+            print('empty')
+            return
+        print(self.list[self.front], end=' ')
+        self.front -= 1
+        print(self.front)
 
-def peek():
-    if not is_empty():
-        return queue[front]
-    else:
-        print("Queue is Empty")
-        return None
+    def Getfront(self):
+        print(self.list[self.front])
 
-enqueue(1)
-enqueue(2)
-enqueue(3)
-enqueue(4)
-enqueue(5)
-dequeue()
-dequeue()
-dequeue()
-dequeue()
+    def Addrear(self, e):
+        if self.isFull():
+            print('full')
+            return
+        self.rear = (self.rear - 1) % self.capacity
+        self.list[self.rear] = e
+        print(*self.list)
+
+    def Deleterear(self):
+        if self.isEmpty():
+            print('empty')
+            return
+        print(self.list[self.rear], end=' ')
+        self.rear = (self.rear + 1) % self.capacity
+        print(self.rear)
+
+    def Getrear(self):
+        print(self.list[self.rear])
+
+a = Deque()
+a.Addfront(1)
+a.Addrear(2)
+a.Addfront(3)
+a.Addfront(4)
+a.Addrear(5)
+a.Addfront(1)
+a.Addrear(3)
+a.Deletefront()
+a.Deletefront()
+a.Deleterear()
+a.Deleterear()
+a.Deleterear()
+a.Deletefront()
