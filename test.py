@@ -1,7 +1,3 @@
-bmi=int(input())
-if bmi<=10:
-    print("정상")
-elif bmi<=20:
-    print("과체중")
-else:
-    print("비만")
+n = list(map(int, input().split()))
+n.sort()
+print(str(n[0])+' '+str(n[1])+' '+str(n[2]))
