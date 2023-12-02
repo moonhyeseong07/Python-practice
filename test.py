@@ -1,14 +1,7 @@
-t,os,ts=map(int,input().split())
-lt=90-t
-g=0
-if lt%5==0:
-    g=lt//5
+menu=[0,400,340,170,100,70]
+menu1, menu2=map(int,input().split())
+c=menu[menu1]+menu[menu2]
+if(c>500):
+    print('angry')
 else:
-    g=lt//5+1
-os+=g
-if os>ts:
-    print("win")
-elif os<ts:
-    print("lose")
-else:
-    print("same")
+    print('no angry')
