@@ -1,11 +1,14 @@
-score=int(input())
-if score>=90:
-    print("A")
-elif score>=80:
-    print("B")
-elif score>=70:
-    print("C")
-elif score>=60:
-    print("D")
+t,os,ts=map(int,input().split())
+lt=90-t
+g=0
+if lt%5==0:
+    g=lt//5
 else:
-    print("F")
+    g=lt//5+1
+os+=g
+if os>ts:
+    print("win")
+elif os<ts:
+    print("lose")
+else:
+    print("same")
