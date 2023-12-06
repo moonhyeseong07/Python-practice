@@ -1,4 +1,4 @@
-class stack:
+class stack:#후위표기법
     def __init__(self,size=5):
         self.stack_size=size
         self.stack=[0]*5
