@@ -1,9 +1,5 @@
-h1,h2,h3=map(int,input().split())
-if(h1<=170):
-    print("CRASH")
-elif(h2<=170):
-    print("CRASH")
-elif(h3<=170):
-    print("CRASH")
-else:
-    print("PASS")
+a,b=map(int,input().split())
+if a>=b:
+    print("1")
+elif a<=b:
+    print("0")
