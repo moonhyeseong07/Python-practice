@@ -1,7 +1,5 @@
-def f(n,c=1):
-    if c>n:
-        return
-    print("*"*c)
-    f(n,c+1)
-n=int(input())
-f(n)
+a,b=map(int,input().split())
+if a==b:
+    print("0")
+else:
+    print("1")
