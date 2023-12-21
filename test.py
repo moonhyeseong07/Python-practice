@@ -1,5 +1,5 @@
-a,b=map(int,input().split())
-if a==b:
+a=int(input())
+if a==1:
     print("0")
-else:
+elif a==0:
     print("1")
