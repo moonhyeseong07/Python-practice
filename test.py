@@ -1,2 +1,9 @@
-a,b=map(int,input().split())
-print(a>>b)
+a,b,c=map(int,input().split())
+min=0
+if a<=b and a<=c:
+    min=a
+elif b<=a and b<=c:
+    min=b
+elif c<=a and c<=b:
+    min=c
+print(min)
