@@ -1,5 +1,9 @@
-n=int(input())
-if n%2==1:
-    print("odd")
+age=int(input())
+birth=2012-age+1
+
+if(birth<2000):
+    birth=str(birth)
+    print(int(birth[2:4]),1)
 else:
-    print("even")
+    birth=str(birth)
+    print(int(birth[2:4]),3)
