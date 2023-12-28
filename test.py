@@ -1,9 +1,11 @@
-age=int(input())
-birth=2012-age+1
-
-if(birth<2000):
-    birth=str(birth)
-    print(int(birth[2:4]),1)
+limit=input()
+m=limit[1]+limit[0]
+m=int(m)*2
+if(m>99):
+    m=m%100
+if(m<=50):
+    print(m)
+    print('GOOD')
 else:
-    birth=str(birth)
-    print(int(birth[2:4]),3)
+    print(m)
+    print('OH MY GOD')
