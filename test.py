@@ -1,11 +1,7 @@
-limit=input()
-m=limit[1]+limit[0]
-m=int(m)*2
-if(m>99):
-    m=m%100
-if(m<=50):
-    print(m)
-    print('GOOD')
+a,b=map(int,input().split())
+if(a%b==0):
+    print(str(b)+'*'+str(int(a/b))+'='+str(a))
+elif(b%a==0):
+    print(str(a)+'*'+str(int(b/a))+'='+str(b))
 else:
-    print(m)
-    print('OH MY GOD')
+    print('none')
