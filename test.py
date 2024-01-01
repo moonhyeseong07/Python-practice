@@ -1,2 +1,3 @@
 s=input()
-print(s.swapcase())
+if s=='love':
+    print('I love you.')
