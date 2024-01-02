@@ -1,3 +1,7 @@
-s=input()
-if s=='love':
-    print('I love you.')
+n,ad,c=map(int,input().split())
+if(ad-c==n):
+    print("does not matter")
+elif(ad-c>n):
+    print('advertise')
+else:
+    print('do not advertise')
