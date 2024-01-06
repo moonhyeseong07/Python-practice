@@ -1,7 +1,9 @@
-length=int(input())
-num=list(map(int,input().split()))
-result=0
-for i in num:
-    if i%5==0:
-        result+=i
-print(result)
+n=int(input())
+for i in range(1,n+1):
+    for j in range(0, i):
+        print('*',end='')
+    print()
+for i in range(n-1,0,-1):
+    for j in range(0,i):
+        print('*',end='')
+    print()
