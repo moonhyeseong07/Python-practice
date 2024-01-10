@@ -1,7 +1,9 @@
-n=int(input())
-numbers=list(map(int, input().split()))
-result=0
-for num in numbers:
-    if num%2==1:
-        result+=1
-print(result)
+c=s=100
+for _ in range(int(input())):
+    a,b =map(int,input().split())
+    if a>b:
+        s-=a
+    elif a<b:
+        c-=b
+print(c)
+print(s)
