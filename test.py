@@ -1,11 +1,12 @@
-def binary_search(array, target, start, end):
-    while start <= end:
-        mid = (start + end) // 2
-        if array[mid] == target:
-            return mid
-        elif array[mid] > target:
-            end = mid -1
-        else:
-            start = mid +1
-    return None
-result = binary_search(array, target, 0, n - 1)
+# Memoization 초기화
+d = [0] * 100
+
+def fibo(x):
+    # base case
+    if x == 1 or x == 2:
+        return 1
+    if d[x] != 0:
+        return d[x]
+    # 점화식을 그대로 구현
+    d[x] = fibo(x-1) + fibo(x-2)
+    return d[x]
