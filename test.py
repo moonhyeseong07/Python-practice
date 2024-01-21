@@ -1,7 +1,5 @@
-def f(n,c=1):
-    if c>n:
-        return
-    print("*"*c)
-    f(n,c+1)
-n=int(input())
-f(n)
+start,last=input().split()
+start=ord(start)
+last=ord(last)
+for i in range(start,last+1):
+    print(chr(i),end=' ')
