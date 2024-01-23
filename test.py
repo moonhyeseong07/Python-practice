@@ -1,4 +1,7 @@
-a=list(map(int,input().split()))
-k=int(input())
-sum=a[k-1]
-print(sum)
+word=input().strip()
+po=[]
+for i in range(len(word)):
+    if word[i]=='t':
+        po.append(str(i+1))
+result=' '.join(po)
+print(result)
