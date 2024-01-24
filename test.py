@@ -1,7 +1,3 @@
-word=input().strip()
-po=[]
-for i in range(len(word)):
-    if word[i]=='t':
-        po.append(str(i+1))
-result=' '.join(po)
+a,b=map(int,input().split())
+result=a+b
 print(result)
