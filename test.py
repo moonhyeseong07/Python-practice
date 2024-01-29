@@ -1,5 +1,7 @@
-h,m=map(int,input().split())
-time=int(input())
-e_h=(h+(m+time)//60)%24
-e_m=(m+time)%60
-print(e_h,e_m)
+a,b=map(int,input().split())
+if a>b:
+    print('>')
+elif b>a:
+    print('<')
+elif a==b:
+    print('==')
