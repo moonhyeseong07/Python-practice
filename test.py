@@ -1,3 +1,5 @@
-num=int(input())
-for i in range(1,10):
-    print(str(num)+" * "+str(i)+" = "+str(num*i))
+n=int(input())
+num=list(map(int,input().split()))
+min=min(num)
+max=max(num)
+print(min,max)
