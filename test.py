@@ -1,5 +1,5 @@
-n=int(input())
-num=list(map(int,input().split()))
-min=min(num)
-max=max(num)
-print(min,max)
+num=[]
+for i in range(9):
+    num.append(int(input()))
+print(max(num))
+print(num.index(max(num))+1)
