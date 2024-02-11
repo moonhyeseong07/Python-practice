@@ -1,4 +1,6 @@
-n = int(input())
-numbers = input()
-total_sum = sum(int(digit) for digit in numbers)
-print(total_sum)
+while True:
+    try:
+        a,b=map(int,input().split())
+        print(a+b)
+    except:
+        break
