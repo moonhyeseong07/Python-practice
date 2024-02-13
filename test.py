@@ -1,5 +1,5 @@
-a,b,c=map(int,input().split())
-print((a+b)%c)
-print(((a%c)+(b%c))%c)
-print((a*b)%c)
-print(((a%c)*(b%c))%c)
+n=int(input())
+result=0
+for i in range(1,n+1):
+    result+=i
+print(result)
