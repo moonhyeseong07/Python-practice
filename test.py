@@ -1,13 +1,5 @@
-x=int(input())
-y=int(input())
-if x>0:
-    if y>0:
-        print("1")
-    else:
-        print("4")
-else:
-    if x<0:
-        if y<0:
-            print("3")
-        else:
-            print("2")
+n=int(input())
+numbers=[int(input())for _ in range(n)]
+numbers.sort()
+for num in numbers:
+    print(num)
