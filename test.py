@@ -1,5 +1,5 @@
 n=int(input())
-numbers=[int(input())for _ in range(n)]
-numbers.sort()
-for num in numbers:
-    print(num)
+for i in range(1,n+1,2):
+    s=(n-i)//2
+    star=i
+    print(" "*s+"*"*star)
