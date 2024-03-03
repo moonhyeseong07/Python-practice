@@ -1,4 +1,5 @@
 n=int(input())
-data=list(map(int,input().split()))
-max_val=max(data)
-print(max_val)
+for i in range(1,n+1):
+    space=' '*(n-i)
+    star='*'*i
+    print(space+star)
