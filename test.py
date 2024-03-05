@@ -1,3 +1,6 @@
-a=sorted(list(map(int,input().split())))
-for i in range(3):
-    print(a[i],end=' ')
+while True:
+    sentence=input().strip()
+    if sentence=='#':
+        break
+    cnt=sum(1 for char in sentence if char.lower() in 'aeiou')
+    print(cnt)
