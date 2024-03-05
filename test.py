@@ -1,6 +1,5 @@
-while True:
-    sentence=input().strip()
-    if sentence=='#':
-        break
-    cnt=sum(1 for char in sentence if char.lower() in 'aeiou')
-    print(cnt)
+n=int(input())
+result=0
+for i in range(1,n+1):
+    result+=1
+    print(result)
