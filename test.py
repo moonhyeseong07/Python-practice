@@ -1,8 +1,3 @@
-while True:
-    name,age,kg=input().split()
-    if '#' in name:
-        break
-    if int(age)>17 or int(kg)>=80:
-        print(f"{name} Senior")
-    else:
-        print(f"{name} Junior")
+n=int(input())
+for i in range(n,0,-1):
+    print(" "*(n-i)+"*"*i)
