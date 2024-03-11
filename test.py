@@ -1,7 +1,5 @@
-sum=0
-for _ in range(5):
-    score=int(input())
-    if score<40:
-        score=40
-    sum+=score
-print(sum//5)
+a=int(input())
+b=int(input())
+print(a+b)
+print(a-b)
+print(a*b)
