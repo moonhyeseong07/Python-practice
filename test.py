@@ -1,3 +1,2 @@
-r1,average=map(int,input().split())
-result=average-r1
-print(average+result)
+a,b=map(int,input().split())
+print(a+b)
