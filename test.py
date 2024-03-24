@@ -1,5 +1,4 @@
-n=input()
-if n[-2] + n[-1]=="10":
-    print(int(n[:-2])+10)
-else:
-    print(int(n[:-1])+ int(n[-1]))
+person,width=map(int,input().split())
+a,b,c,d,e=map(int,input().split())
+sum=person*width
+print(a-sum,b-sum,c-sum,d-sum,e-sum)
