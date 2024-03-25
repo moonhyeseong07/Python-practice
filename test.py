@@ -1,4 +1,3 @@
-l,p=map(int,input().split())
-numlist=list(map(int,input().split()))
-for num in numlist:
-    print(num-l*p,end=' ')
+n=int(input())
+for i in range(n,0,-1):
+    print(" "*(n-i)+"*"*(2*i-1))
