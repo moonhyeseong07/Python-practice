@@ -1,3 +1,6 @@
-n=int(input())
-for i in range(n,0,-1):
-    print(" "*(n-i)+"*"*(2*i-1))
+a,b,c=map(int,input().split())
+if c>b:
+    b_e_p=a//(c-b)+1
+    print(b_e_p)
+else:
+    print("-1")
