@@ -9,4 +9,4 @@ def f_ball(M,swaps):
     return ball_po
 M=int(input())
 swaps=[list(map(int,input().split()))for _ in range(M)]
-print(f_ball(M,swaps))
+print(f_ball(M,swaps)) 
