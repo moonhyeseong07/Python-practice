@@ -1,6 +1,5 @@
-h,m,s=map(int,input().split())
-t=int(input())
-s+=t
-m+=s//60
-h+=m//60
-print(h%24,m%60,s%60)
+res=0
+for i in range(4):
+    res+=int(input())
+print(res//60)
+print(res%60)
