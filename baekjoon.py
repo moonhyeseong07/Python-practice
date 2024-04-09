@@ -1,2 +1,3 @@
-m,n=map(int,input().split())
-print(abs(m-n))
+a=sum(map(int,input().split()))
+b=sum(map(int,input().split()))
+print(max(a,b))
