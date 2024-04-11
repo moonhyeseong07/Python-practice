@@ -1,6 +1,6 @@
-a=input()
-b=input()
-if len(a)<len(b):
+x=input()
+y=input()
+if len(x)<len(y):
     print("no")
 else:
     print("go")
