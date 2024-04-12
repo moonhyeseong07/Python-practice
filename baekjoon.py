@@ -1,6 +1,10 @@
-x=input()
-y=input()
-if len(x)<len(y):
-    print("no")
-else:
-    print("go")
+print("     /~\\")
+print("    ( oo|")
+print("    _\\=/_")
+print("   /  _  \\")
+print("  //|/.\\|\\\\")
+print(" ||  \\ /  ||")
+print("============")
+print("|          |")
+print("|          |")
+print("|          |")
