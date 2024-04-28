@@ -1,4 +1,4 @@
-n=int(input())
+n = int(input())
 if n==0:
     print("YONSEI")
 elif n==1:
