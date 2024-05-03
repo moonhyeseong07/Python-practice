@@ -1,5 +1,6 @@
-n = int(input())
-if n==0:
-    print("YONSEI")
-elif n==1:
-    print("Leading the Way to the Future")
+a,b,c=map(int,input().split())
+res=(a*b)-c
+if res > 0:
+    print(res)
+else:
+    print(0)
