@@ -1,14 +1,7 @@
-sum_price = int(input())
-n = int(input())
+word=input()
+count=[0]*26
 
-result=0
+for i in word:
+    count[ord(i)-97]+=1
 
-for i in range(1,n+1):
-    price,count = map(int,input().split())
-    result+=price*count
-
-if result==sum_price:
-    print("Yes")
-
-else:
-    print("No")
+print(*count)
