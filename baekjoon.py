@@ -1,7 +1,10 @@
-word=input()
-count=[0]*26
+a,b=map(int,input().split())
+array=[]
+for i in range(1,a+1):
+    if(a%i==0):
+        array.append(i)
 
-for i in word:
-    count[ord(i)-97]+=1
-
-print(*count)
+if(b<=len(array)):
+    print(array[b-1])
+else:
+    print(0)
