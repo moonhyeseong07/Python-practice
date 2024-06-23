@@ -13,7 +13,6 @@ while True :
     graph[v[1]][v[0]] = 1
 
 def dfs(n) :
-    
     stack.append(n)
     
     while len(answer) != g :
@@ -24,6 +23,7 @@ def dfs(n) :
         for i in range(g-1, -1, -1) :
             if graph[v][i] and not visited[i] :
                 stack.append(i)
+                
     print(*answer)
 
 dfs(0)
