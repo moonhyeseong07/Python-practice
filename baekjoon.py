@@ -9,6 +9,7 @@ while True :
     v = list(map(int, f.readline().split()))
     if not v :
         break
+    
     graph[v[0]][v[1]] = 1
     graph[v[1]][v[0]] = 1
 
